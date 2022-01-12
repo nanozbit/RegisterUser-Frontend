@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="card-form">
+        <div class="card">
+            <div class="card-header d-flex aling-items-center justify-content-center">
+                <h1>Login</h1>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <label for="username" class="form-label">Username</label>
+                    <input  [(ngModel)]="dataResponse.userName" type="text" class="form-control" id="username" placeholder="UserName">
+                </div>
+                <div class="mb-2">
+                    <label for="name" class="form-label">FirstName</label>
+                    <input  [(ngModel)]="dataResponse.firstName" type="text" class="form-control" id="name" placeholder="FirstName">
+                </div>
+                <div class="mb-2">
+                    <label for="lastName" class="form-label">LastName</label>
+                    <input  [(ngModel)]="dataResponse.lastName" type="text" class="form-control" id="name" placeholder="LastName">
+                </div>
+                <div class="mb-2">
+                    <label for="password" class="form-label">Password</label>
+                    <input [(ngModel)]="dataResponse.password" type="text" id="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="mb-2">
+                    <label for="emailAddress" class="form-label">EmailAddress</label>
+                    <input  [(ngModel)]="dataResponse.emailAddress" type="text" class="form-control" id="emailAddress" placeholder="name@example.com">
+                </div>
+                <div class="mb-2">
+                    <label for="address" class="form-label">Address</label>
+                    <input  [(ngModel)]="dataResponse.address" type="text" class="form-control" id="address" placeholder="Address">
+                </div>
+                <div class="mb-2">
+                    <label for="birdDate" class="form-label">Birthdate</label>
+                    <input  [(ngModel)]="dataResponse.birdDate" type="date" class="form-control" id="birdDate" placeholder="Birthdate">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg" (click)="save()">Login</button>
+            </div>
+        </div>
+
+    </div>
+</div>

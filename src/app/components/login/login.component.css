@@ -1,0 +1,9 @@
+.card {
+    width: 400px;
+}
+.card-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
